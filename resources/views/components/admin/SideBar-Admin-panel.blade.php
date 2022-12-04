@@ -1,4 +1,4 @@
-@extends('layouts.Admin-Panel')
+@extends('layouts.admin-panel')
 @section('admin_sidebar')
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
