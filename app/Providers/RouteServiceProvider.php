@@ -34,6 +34,13 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/api.php'));
 
 
+                                             /*    */
+                                        /* default route */
+                                             /*    */
+            Route::middleware('web')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/web.php'));
+
 
                                                 /*    */
                                            /* admin route */
@@ -46,12 +53,19 @@ class RouteServiceProvider extends ServiceProvider
 
 
                                                   /*    */
-                                             /* client route */
+                                             /* blog-home route */
                                                  /*     */
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/admin/client.php'));
+                ->group(base_path('routes/home/blog-home.php'));
         });
+                                                   /*    */
+                                             /* blog-post route */
+                                                   /*     */
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/post/blog-post.php'));
+    });
     }
 
     /**
