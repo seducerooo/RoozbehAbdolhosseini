@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
                                                 /*    */
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/admin/admin.php'));
+                ->group(base_path('routes\admin\admin.php'));
 
 
 
@@ -57,14 +57,14 @@ class RouteServiceProvider extends ServiceProvider
                                                  /*     */
             Route::middleware('web')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/home/blog-home.php'));
+                ->group(base_path('routes\home\blog-home.php'));
         });
                                                    /*    */
-                                             /* blog-post route */
+                                             /* blog-blog-post route */
                                                    /*     */
         Route::middleware('web')
             ->namespace($this->namespace)
-            ->group(base_path('routes/post/blog-post.php'));
+            ->group(base_path('routes\post\blog-post.php'));
 
     }
 

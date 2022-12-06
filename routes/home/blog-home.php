@@ -5,4 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/blog-home',[BlogHomeController::class,'index']);
+
+                                 /* Blog Home Index Page */
+Route::get('/blog-home',[BlogHomeController::class,'index'])->name('blog-home');

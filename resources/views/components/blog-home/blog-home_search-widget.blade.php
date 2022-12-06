@@ -1,6 +1,4 @@
-@extends('layouts.blog-home-panel')
-@section('search-widget')
-    <div class="card my-4">
+<div class="card my-4">
         <h5 class="card-header">Search</h5>
         <div class="card-body">
             <div class="input-group">
@@ -11,4 +9,4 @@
             </div>
         </div>
     </div>
-@endsection
+

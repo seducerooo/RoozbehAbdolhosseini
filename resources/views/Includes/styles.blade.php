@@ -8,3 +8,5 @@
 <link href="{{ asset('css/blog-home.css') }}" rel="stylesheet">
 <!-- Custom styles for this template-->
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="{{ asset('css/blog-post.css') }}" rel="stylesheet">

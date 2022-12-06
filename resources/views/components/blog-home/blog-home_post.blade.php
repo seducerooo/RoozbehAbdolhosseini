@@ -1,5 +1,3 @@
-@extends('layouts.blog-home-panel')
-@section('post')
 <div class="card mb-4">
     <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
     <div class="card-body">
@@ -12,4 +10,3 @@
         <a href="#">Start Bootstrap</a>
     </div>
 </div>
-@endsection
